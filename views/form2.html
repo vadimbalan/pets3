@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Form2</title>
+</head>
+<body>
+<div class="container">
+    <form action="#" method="post" class="form-horizontal">
+
+        <h1>Form2</h1>
+
+        <!-- get pet -->
+
+
+        <!-- get color -->
+        <div class="form-group">
+            <div class="row">
+                <label class="col-sm-2 control-label" for="color">Select a color</label>
+
+                <select class="form-control" name="color" id="color">
+                    <option>-- Select a color --</option>
+                    <repeat group="{{ @colors }}" value="{{ @colorOption }}">
+                        <option>{{ @colorOption }}</option>
+                    </repeat>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary mb-2">Place Order</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
