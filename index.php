@@ -15,6 +15,7 @@ $f3 = Base::instance();
 
 //set color
 $f3->set('colors', array('pink', 'green', 'blue'));
+////
 // Default route
 $f3->route('GET /', function()
 {
