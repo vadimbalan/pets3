@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Pet Order</title>
+</head>
+<body>
+    <div class = "container">
+        <form action="#" method="post" class="form-horizontal">
+
+            <h1>Order a Pet</h1>
+
+            <!-- get pet -->
+            <div class="form-group">
+                <div class="row">
+                    <label for="pet" class="col-sm-2 control-label">What kind of pet would you like to order?</label>
+
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" name="pet" id="pet">
+                    </div>
+                </div>
+            </div>
+
+            <!-- get color -->
+            <div class="form-group">
+                <div class="row">
+                    <label class="col-sm-2 control-label" for="color">Select a color</label>
+
+                    <select class="col-sm-3" id="color" name="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary mb-2">Place Order</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

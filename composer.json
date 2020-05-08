@@ -1,0 +1,19 @@
+{
+  "name": "vbalan/328/pets3",
+  "authors":
+  [
+    {
+      "name": "Vadim Balan",
+      "email": "vbalan@mail.greenriver.edu"
+    }
+    ,
+    {
+      "name": "Qinghang Zhang",
+      "email": "qzhang@mail.greenriver.edu"
+    }
+  ],
+  "require":
+  {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
