@@ -30,10 +30,11 @@
                 <div class="row">
                     <label class="col-sm-2 control-label" for="color">Select a color</label>
 
-                    <select class="col-sm-3" id="color" name="color">
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="green">Green</option>
+                    <select class="form-control" name="color" id="color">
+                        <option>-- Select a color --</option>
+                        <repeat group="{{ @colors }}" value="{{ @colorOption }}">
+                            <option>{{ @colorOption }}</option>
+                        </repeat>
                     </select>
                 </div>
             </div>
